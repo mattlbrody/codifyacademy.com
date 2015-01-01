@@ -1,0 +1,1 @@
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.collapse'</span><span class="p">).</span><span class="nx">collapse</span><span class="p">();</span>

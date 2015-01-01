@@ -1,0 +1,1 @@
+<span class="div_color">&lt;textarea</span> <span class="class_color">class=</span><span class="container_color">"form-control"</span> <span class="class_color">rows=</span><span class="container_color">"3"</span><span class="div_color">&gt;&lt;/textarea&gt;</span>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Codify Academy's Digital Clock</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="UTF-8">
+  	<meta name="description" content="Codify Academy's Boiler Plate">
+  	<meta name="keywords" content="Codify Academy, Boiler Plate, HTML, CSS, Javascript">
+  	<meta name="author" content="Codify Academy">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome Icons -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Our Added CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body onload="displayTime()">
+      
+    <div class="container first">
+        <h1 class="text-center">Codify Academy - A Ticking Clock!</h1>
+        <h3 class="text-center" id="time"></h3>
+
+        <div class="clearfix"></div>
+        <img class="img-center" src="img/clock1.jpg">
+
+        <div class="clearfix"></div>
+
+        <div class="col-md-8 col-md-offset-2">        
+
+            <h2>Description</h2>
+            <p>What time is it? You'll finally be able to answer that question after you've built this simple clock.</p>
+
+            <h3 class="text-center" id="time2"></h3>
+
+            <h2>Time to start!</h2>
+            <p class="intro_p">Are you ready? Great. Create a new copy of boiler plate. Call it whatever you want. We've called ours "Digital Clock".</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- step 1 -->
+    <section class="step_1">
+        <div class="container-fluid">
+            <div class="col-md-8 col-md-offset-2">             
+                <h2 class="text-center">Step 1: Thinking Time...</h2> 
+            </div>
+
+            <div class="clearfix"></div>
+
+            <img class="img-center" src="img/clock2.jpg">
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-8 col-md-offset-2">
+
+                <p>Before we start writing any code, let's think a little about the parts of a digital clock that we want to display. Time is generally broken up into three units: hours, minutes, and seconds. 12-hour clocks also separate a day into two parts: AM (which stands for ante-meridiem) and PM (post-meridiem).</p>
+
+                <p>It seems pretty basic but understanding these units will give us the vocabulary we need to write our code.</p>
+
+
+            </div> 
+        </div>
+    </section>
+    <!-- /step 1 -->
+
+
+
+
+    <!-- step 2 -->
+    <section class="step_2">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                
+                <h2 class="text-center">Step 2: Asking for the Date()</h2>
+
+                <br>
+
+                <p class="lead">Begin in a new .js file.</p>
+
+                <ol>
+                  <li>Start a new function that will do all the work calculating and showing our time. We will be writing most of our code inside this function.</li>
+                  <li>Create a new function and give it a name that makes sense to you. Since this function will ultimately display the time on our page, we named ours displayTime.</li>
+                </ol>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>
+                        <span class="r in1">function</span>
+                        <span class="g">displayTime</span><span class="b">() {</span>
+                        <br><br>
+                        <span class="b in1">}</span>                      </code>
+                    </div>
+                    <button class="btn btn-success reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <ol>
+                  <li>Now that we have our function ready to go let's make it do some work.</li>
+                  <li>Let's start by defining a new variable. Variables are like containers in JavaScript. They can store information that can later be used in calculations and displays. We're going to make a variable that will store the current time.</li>
+                  <li>To create a variable write var and then a name describing what the variable will hold. Ours is going to hold the current time so we named it currentTime. After the variable name, an equal sign (=) is used to set the value of the variable and anything we put after that "=" will fill up our currentTime variable.</li>
+                </ol>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>
+                        <span class="r">function</span>
+                        <span class="g">displayTime</span><span class="b">() {</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">currentTime</span>
+                        <span class="b">=</span>
+                        <br>
+                        <span class="b">}</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-success reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>Now comes the cool part. We're going to ask the computer the date and it's going to store the answer in our currentTime variable.</p>
+
+                <p>Programming languages, like JavaScript, have some basic information at the ready. To do their job they have to know things like how to do math, how long a second is, and what the time is. We can ask the computer for this information whenever we need it and allow it to do the hard work.</p>
+
+                <p>To get the current date and time we use the Date object. Add new Date(); after the "=".</p>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>
+                        <span class="r">function</span>
+                        <span class="g">displayTime</span><span class="b">() {</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">currentTime</span>
+                        <span class="b">=</span>
+                        <span class="r">new</span>
+                        <span class="g">Date</span><span class="b">();</span>
+                        <br>
+                        <span class="b">}</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-success reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>When you see var currentTime = new Date(), you should think of it as create a variable called currentTime and set its value to a new Date object.</p>
+                <p>What we've done is ask the computer to fill our currentTime variable with the date and time as this exact moment, as soon as the function runs. It does that by taking the time from your computer's own clock so if your computer's time is wrong the date it stores will be wrong.</p>
+
+            </div>
+        </div>
+    </section>
+    <!-- /step 2 -->
+
+
+
+
+    <!-- step 3 -->
+    <section class="step_3">
+        <div class="container-fluid">
+            <div class="col-md-8 col-md-offset-2">                
+                <h2 class="text-center">Step 3: Getting Hours, Minutes & Seconds</h2>
+
+                <br>
+
+                <p>Now our currentTime variable is full of information. Lots of information. It calls up the exact year, month , day, hour, minute, second, and even the millisecond at that moment. We need to pull out just the hours, seconds, and minutes to build our clock. Fortunately, we can do that by writing three more variables that extract and store just those things.</p>
+                <p>Just below our currentTime variable write a new variable. This one will pull hours out, so we called ours h short for hours.</p>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>
+                        <span class="r">function</span>
+                        <span class="g">displayTime</span><span class="b">() {</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">currentTime</span>
+                        <span class="b">=</span>
+                        <span class="r">new</span>
+                        <span class="g">Date</span><span class="b">();</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">h</span>
+                        <span class="b">=</span>
+                        <br>
+                        <span class="b">}</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-danger reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>Now let's fill that variable with just hours from our currentTime variable, to do that add the following text after the "="" currentTime.getHours();</p>
+
+                <p>getHours is what's called a method and it can be used with Date objects. It does what it describes, it looks at the date object information and gets just the hours. Right now all the date information (including the hours) is inside currentTime so we need to apply getHours to currentTime to extract the hour information.</p>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>
+                        <span class="r">function</span>
+                        <span class="g">displayTime</span><span class="b">() {</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">currentTime</span>
+                        <span class="b">=</span>
+                        <span class="r">new</span>
+                        <span class="g">Date</span><span class="b">();</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">h</span>
+                        <span class="b">=</span>
+                        <span class="b">curretTime.</span><span class="r">getHours</span><span class="b">();</span>
+                        <br>
+                        <span class="b">}</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-danger reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>Now we have a variable called hours that has our hours in it.</p>
+
+                <p>There are also methods for seconds and minutes. They're getSeconds and getMinutes. Let's create two variables below our var hours that pull out and hold the seconds and minutes from our currentTime variable.</p>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>
+                        <span class="r">function</span>
+                        <span class="g">displayTime</span><span class="b">() {</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">currentTime</span>
+                        <span class="b">=</span>
+                        <span class="r">new</span>
+                        <span class="g">Date</span><span class="b">();</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">h</span>
+                        <span class="b">=</span>
+                        <span class="b">curretTime.</span><span class="r">getHours</span><span class="b">();</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">m</span>
+                        <span class="b">=</span>
+                        <span class="b">curretTime.</span><span class="r">getMinutes</span><span class="b">();</span>
+                        <br>
+                        <span class="r in1">var</span>
+                        <span class="b">s</span>
+                        <span class="b">=</span>
+                        <span class="b">curretTime.</span><span class="r">getSeconds</span><span class="b">();</span>
+                        <br>
+                        <span class="b">}</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-danger reveal_code last"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+            </div>
+        </div>
+    </section>
+    <!-- /step 3 -->
+
+
+
+
+    <!-- step 4 -->
+    <section class="step_4">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">                
+                <h2 class="text-center">Step 4: Putting it all Together</h2>
+
+                <br>
+
+                <p>Now that we have all the variables to find the time, let's write a function that puts them all together in a way that we can display them.</p>
+
+                <p>Let's start by making a new line and writing a new <strong>IF</strong> statement. Set the condition to test if your <code>h</code> variable is greater than 12. If it is greater than 12 we want to decrease the value by 12, so we don't see military time anymore.</p>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>
+                        <span class="r">if</span>
+                        <span class="b">(</span>
+                        <span class="g">h > 12</span>
+                        <span class="b">) {</span>
+                        <br>
+                        <span class="b in1">h -= 12;</span>
+                        <br>
+                        <span class="b">}</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-success reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>Using this quick if - statement will take care of converting hours if we get past 12 noon. Next we will create a few variables to add zeros to minutes & seconds. Lets start with a new variable called m and set it equal to a function we will create in a few "checkTime()" and pass the m variable inside as a parameter.  Do the same with another variable called s and set it equal to "checkTime()" and pass the s variable again in the parameter.</p>
+                
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>                   
+                        <span class="b">m</span>
+                        <span class="b">=</span>
+                        <span class="b">checkTime</span><span class="g">(m);</span>
+                        <br>                    
+                        <span class="b">s</span>
+                        <span class="b">=</span>
+                        <span class="b">checkTime</span><span class="g">(s);</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-success reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>Now we need to create some JavaScript that will let our JavaScript code connect with a DIV named "time" that we'll eventually make in our HTML file. To make this connection, we use a function called document.getElementById() to retrieve a "handle" to a DIV with a specific ID. In this case, it's a DIV with the "time" ID.</p>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>                   
+                        <span class="g">document</span><span class="b">.getElementById</span><span class="b">()</span></code>
+                    </div>
+                    <button class="btn btn-success reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>getElementByID is kind of like getHours except instead of getting time information from our Date() object it scans our HTML document and finds an HTML element with a specific ID.</p>
+
+                <p>Once we have a handle to our DIV element in JavaScript, we can set its contents to the current time. Let's fill that HTML element with our hours, minutes, and seconds.</p>
+                <p>To do that we will use a method called innerText. innerText can set text inside an HTML element such as our time DIV.</p>        
+                <p>Now let's write out the text that we want innerText to put inside our clock DIV element.</p>
+
+                <p>Our hours, minutes, and seconds variables are full of numbers already. We need to assemble them in order and format them a little so they make sense. We can link them up with + and use "" to turn these raw numbers into formatted text that contains the entire time, including the ":" characters that go in between the numbers or spaces.</p>
+                
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>                    
+                        <span class="g">document</span><span class="b">.getElementById</span><span class="b">('time')</span><span class="g">.innerHTML</span>                       
+                        <span class="b">=</span>
+                        <span class="r">h</span>
+                        <span class="b">+</span>
+                        <span class="g">":"</span>
+                        <span class="r">m</span>
+                        <span class="b">+</span>
+                        <span class="g">":"</span>
+                        <span class="r">s<span class="g">;</span></span>
+                      </code>
+                    </div>
+                    <button class="btn btn-success reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>In case you're wondering, programmers call text "strings," and combining several pieces of text together is called "concatenation". In case you're really wondering, integer numbers like -1, 0, 1, 2, and 3 are called "ints". And if you're really, really wondering, numbers with decimal points like 1.2, 0.005, and 3.14 are called "floats". There's a lot more you could read about this, if you're really, really, really wondering, but let's get back to making our clock.</p>
+            </div>
+        </div>
+    </section>
+    <!-- /step 4 -->
+
+
+
+
+
+    <!-- step 5 -->
+    <section class="step_5">
+        <div class="container-fluid">
+            <div class="col-md-8 col-md-offset-2">                
+                <h2 class="text-center">Step 5: Making the Time Visible</h2>
+
+                <br>
+
+                <p>We've been writing a bunch of code so far but we can't see what it's doing. Let's change that.</p>
+
+                <p>Let's make a place in our HTML for time to connect to and fill with our numbers.</p>
+
+                <ol>
+                  <li>Back in the HTML tab let's erase the text and divs that are there and make a single &lt;div&gt; in our &lt;body&gt;.</li>
+                  <li>Go ahead and give that &lt;div&gt; an id of "time". Remember that we used the ID time in the document.getElementById() method.</li>
+                  <li>Finally add the onload command to our body and add our function displayTime here so it loads correctly!</li>
+                </ol>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>                   
+                        <span class="g">&lt;body</span>
+                        <span class="b">onload="</span><span class="r">displayTime</span><span class="b">()"</span><span class="g">&gt;</span>
+                        <br>
+                        <span class="g in1">&lt;div</span><span class="b"> id=</span><span class="r">"time"</span><span class="g">&gt;&lt;/div&gt;</span>
+                        <br>         
+                        <span class="g">&lt;/body&gt;</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-danger reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>Next we need to create the function and call it checkTime - since we already called this below, (make sure it is above our displayTime function.) and pass the parameter "i" into it. and open with curly bracer's</p>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>                    
+                        <span class="r">function</span>
+                        <span class="g">checkTime</span><span class="b">(i) {</span>
+                        <br>
+                        <br>
+                        <span class="b">}</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-danger reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>We can add our if else-if statement now. Start with the if and set it to the instance of i < 10.  If this passes have i equal to "0" + i;  no for the else if have this set to i === 0 and if this is true set i = 1 + i;  Finally we need to return i below the if-else-if statement</p>
+
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>                  
+                        <span class="r">function</span>
+                        <span class="g">checkTime</span><span class="b">(i) {</span>
+                        <br>
+                        <span class="r in1">if</span>
+                        <span class="b">(</span><span class="g">i < 10</span><span class="b">) {</span>
+                        <br>
+                        <span class="b in2">i = "0" + i;</span>
+                        <br>
+                        <span class="b in1">}</span>
+                        <span class="r">else if</span>
+                        <span class="b">(</span>
+                        <span class="g">i === 0</span>
+                        <span class="b">) {</span>
+                        <br>
+                        <span class="b in2">i = 1 + i;</span>
+                        <br>
+                        <span class="b in1">}</span>
+                        <br>
+                        <span class="r in1">return</span>
+                        <span class="b">i;</span>
+                        <br>
+                        <span class="b">}</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-danger reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>Now go back to the preview mode. See some numbers? That's our clock! That's what our code has made so far. It's not perfect yet, though. We need to do some things to make it look more like a real digital clock.</p>
+            </div>
+        </div>
+    </section>
+    <!-- /step 5 -->
+
+
+
+
+
+    <!-- step 6 -->
+    <section class="step_6">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">                
+                <h2 class="text-center">Step 6: Styling the Clock</h2>
+
+                <div class="clearfix"></div>
+
+                <img class="img-center" src="img/clock3.jpg">
+
+                <div class="clearfix"></div>              
+                
+                <p>The first thing we can do is style our clock text.</p>
+
+                <p>Remember how we gave the &lt;div&gt; an id? Let's make a CSS #id that will make it look good.</p>
+
+                <p>You can style your clock however you want. We made ours big, white and in the middle of a blue screen.</p>
+                <p>Try manipulating the <code>body</code> tags' <code>background-color</code>, we used the hex-color of <strong>#80D4EA</strong>.</p>
+                <p>We also adjusted the <code>#time</code> ID, which displayed the time via JavaScript. We chose to use a <code>height</code> <strong>100px</strong>, we set the <code>width</code> of <strong>800px</strong>, we used a <code>color</code> of <strong>white</strong> for the font, increased the <code>font-size</code> to 100px and <code>text-align</code>'ed the text to the <code>center</code>.</p>
+                <p>Last we adjusted the <code>position</code> to be <strong>absolute</strong>, and for the <code>top</code>, <code>bottom</code>, <code>left</code> & <code>right</code> properties we set to <strong>0</strong> to center the Digital Clock.</p>
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>
+                        <span class="b">body {</span>
+                        <br>
+                        <span class="g in1">background-color: #80d4ea;</span>
+                        <br>
+                        <span class="b">}</span>
+                        <br>
+                        <span class="b">#time {</span>
+                        <br>
+                        <span class="g in1">height: 100px;</span>
+                        <br>
+                        <span class="g in1">width: 800px;</span>
+                        <br>
+                        <span class="g in1">margin: auto;</span>
+                        <br>
+                        <span class="g in1">position: absolute;</span>
+                        <br>
+                        <span class="g in1">top: 0;</span> 
+                        <br>
+                        <span class="g in1">left: 0;</span> 
+                        <br>
+                        <span class="g in1">bottom: 0;</span>
+                        <br>
+                        <span class="g in1">right: 0;</span>
+                        <br>
+                        <span class="g in1">text-align: center;</span>
+                        <br>
+                        <span class="g in1">color: white;</span>
+                        <br>
+                        <span class="g in1">font-size: 100px;</span>
+                        <br>
+                        <span class="b">}</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-success reveal_code last"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /step 6 -->
+
+
+
+    <!-- step 7 -->
+    <section class="step_7">
+        <div class="container-fluid">
+            <div class="col-md-8 col-md-offset-2"> 
+                
+                <h2 class="text-center">Step 7: Making the Clock Tick</h2>
+
+                <br>
+
+                <p>So our clock works and looks pretty good but something is missing. It isn't ticking, it shows the current time the page loads, but doesn't keep counting forward. Let's fix that.</p>
+
+                <p>The reason our clock is frozen is that it is only running through the displayTime function once, when the page loads. We need to write some code to tell it to run every second.</p>
+                
+                <div class="code_div">
+                    <div class="well well-sm code">
+                      <code>
+                        <span class="g">setTimeout</span><span class="b">(</span><span class="r">function</span><span class="b">() {</span>
+                        <br>
+                        <span class="g in1">displayTime</span><span class="b">()</span>
+                        <br>
+                        <span class="b">},</span>
+                        <span class="r">1000</span><span class="b">);</span>
+                      </code>
+                    </div>
+                    <button class="btn btn-danger reveal_code"><i class="fa fa-pencil"></i> Check the Code Against Yours <i class="fa fa-pencil fa-flip-horizontal"></i></button>
+                </div>
+
+                <br>
+
+                <p>setTimeout(); is a method that will  execute a function, after waiting a specified number of milliseconds, measured in milliseconds. 1000 milliseconds is one second. Our function now runs every second. Just like a clock should.</p>
+
+                <p>And there you have it! We've just built a pretty sweet looking clock. Nice work.</p>
+                <h3><a href="http://codepen.io/anon/pen/DxbHo" target="_blank">Here's Our Full Working Clock Code - Check it out</a></h3>
+            </div>
+        </div>
+    </section>  
+    <!-- /step 7 -->	
+
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <!-- Bootstrap Javascript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- Our Added JS -->
+      <script type="text/javascript" src="js/scripts.js"></script>
+
+  </body>
+</html>

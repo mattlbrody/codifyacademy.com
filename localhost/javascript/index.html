@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>javascript skeleton</title>
+	<script type="text/javascript">
+	//get the date
+	var date = new Date();
+
+	//get info from Date object
+	var month = date.getMonth();
+	var day = date.getDate();
+	var year = date.getYear();
+	var hour = date.getHours();
+	var minutes = date.getMinutes(); 
+	var seconds = date.getSeconds();
+	month = month + 1;
+
+	hour = twelvehour(hour);
+
+	hour = fixHour(hour);
+
+	year = fixY2K(year);
+
+	minutes = fixTime(minutes);
+
+	seconds = fixSeconds(seconds);
+
+	//create the date string
+	var date_string = month + "/" + day + "/" + year;
+	var time_string = hour + ":" + minutes + ":" + seconds;
+	var date_time_string = "Today is " + date_string + ". The time is now " + time_string + ".";
+
+	function twelvehour(number) {
+		if (number > 12) {
+			number = number - 12;
+		}
+		return number;
+	}
+
+	function fixHour(number) {
+		if (number < 10) {
+			number = "0" + number;
+		}
+		return number;
+	}
+
+	function fixY2K(number) {
+		if (number < 1000) {
+			number = number + 1900;
+		}
+		return number;
+	}
+
+	function fixTime(number) {
+		if (number < 10) {
+			number = "0" + number;
+		}
+		return number;
+	}
+
+	function fixSeconds(number) {
+		if (number < 10) {
+			number = "0" + number;
+		}
+		return number;
+	}
+	</script>
+</head>
+<body>
+	<h1>What's the date and time?</h1>
+	<script type="text/javascript">
+		document.write(date_time_string);
+	</script>
+</body>
+</html>

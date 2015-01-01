@@ -1,0 +1,4 @@
+<br>
+<span class="div_color">&lt;button</span> <span class="class_color">type=</span><span class="container_color">"button"</span> <span class="class_color">class=</span><span class="container_color">"btn btn-primary btn-lg btn-block"</span><span class="div_color">&gt;</span><span class="content_color">Block level button</span><span class="div_color">&lt;/button&gt;</span>
+<br>
+<span class="div_color">&lt;button</span> <span class="class_color">type=</span><span class="container_color">"button"</span> <span class="class_color">class=</span><span class="container_color">"btn btn-default btn-lg btn-block"</span><span class="div_color">&gt;</span><span class="content_color">Block level button</span><span class="div_color">&lt;/button&gt;</span>

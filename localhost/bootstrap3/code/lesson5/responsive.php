@@ -1,0 +1,1 @@
+<span class="div_color">&lt;img</span> <span class="class_color">src=</span><span class="container_color">"..."</span> <span class="class_color">class=</span><span class="container_color">"img-responsive"</span> <span class="class_color">alt=</span><span class="container_color">"Responsive image"</span><span class="div_color">&gt;</span>

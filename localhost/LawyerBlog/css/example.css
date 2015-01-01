@@ -1,0 +1,61 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Example Custom CSS : DinoMaster!
+ URL : http://wufoo.com
+
+ Last Updated : April 1, 2011
+
+- - - - - - - - - - - - - - - - - - - - - 
+
+INSTRUCTIONS
+1. Copy / Paste all or portions of these
+CSS rules into "custom.css".
+
+2. Experiment and play.
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - Default - - - */
+
+#container {
+	width:296px; 
+	height:481px; 
+	background-image:url(../images/background.png);
+}
+
+#emailandbutton{ 
+	padding-top:360px; 
+	margin-bottom:0px; 
+	list-style-type: none;
+}
+
+#email {
+	text-align:left; 
+	padding-bottom:20px; 
+	padding-left:12px;
+}
+
+#saveForm {
+	background-image:none; 
+	background-color:#FFE627; 
+	color:black; 
+	width:210px; 
+	height:30px; 
+	font-size:15px; 
+	text-align:center; 
+	border:1px; 
+	border-radius:5px; 
+	cursor: pointer; 
+	cursor: hand;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+#saveForm:hover {
+	background-color:#efd825;
+}
+
+#buttons {
+	padding-left:12px;
+}
+
+

@@ -1,0 +1,30 @@
+#Extended License by Allan Moreno
+
+***
+
+The Extended License grants you, the Purchaser, a non-exclusive, non-transferrable right to make use of the work you acquire (Work).
+Your use of the Work, under the Extended License, is subject to the following conditions:
+
+##Conditions:
+
+1.You may use the Work alone in your personal or commercial work for you or your clients.
+
+2.You may incorporate the Work into a larger work you are creating for you or your clients.
+
+3.You may license, sub-license, sell, resell or re-distribute the Work under the following circumstances:
+
+* The Work is incorporated into a larger work you have created; or
+if you use it alone to modify it and Resell it as a re-designed and re-defined end product.
+
+* You may use the Work in a larger work which you are creating for your own purposes or for your client who has asked you to create it.
+
+* When incorporating in a larger work
+  * The Work may be offered for sale only inside the larger work,
+  * Where technically possible, you must ensure the Work cannot be extracted as a stand-alone item, and
+  * The terms of sale prohibit the buyer extracting or re-using the Work as a stand-alone item.
+
+* You may display the Work, and make the Work available for use by an unlimited number of your clients, in conjunction with a web site service that you host on behalf of your clients. When using the Work through a web site service, you may make unlimited copies of the Work but you must procure that your clients do not reproduce or use the Work in another application.
+
+* You must publicly and visibly credit Allan Moreno as the intellectual author of the Work where credits and copyright are appropriate.
+
+* When the Work contains component items, those items must only be used within the Work and you must not extract and use them on a stand-alone basis (that is icons, photos, textures, plugins).

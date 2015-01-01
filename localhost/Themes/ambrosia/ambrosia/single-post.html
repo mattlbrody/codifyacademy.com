@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>My Greatest Web App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/base.css">
+
+        <!--Skins (pick one)-->
+        <link rel="stylesheet" href="css/green.css">
+        <link rel="alternate stylesheet" title="blue" href="css/blue.css">
+        <link rel="alternate stylesheet" title="red" href="css/red.css">
+        
+        <!--Delete this-->
+        <script src="js/styleswitch.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/styleswitch.css">
+        <!--End delete-->
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="css/font-awesome-ie7.css">
+            <script src="js/html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    
+        <!--Delete this-->
+        <div class="switcher">
+            <i class="icon icon-bookmark green"></i> <a href="javascript:chooseStyle('none', 60)" checked="checked">Default theme</a> <br>
+            <i class="icon icon-bookmark blue"></i> <a href="javascript:chooseStyle('blue', 60)">Blue theme</a> <br>
+            <i class="icon icon-bookmark red"></i> <a href="javascript:chooseStyle('red', 60)">Red theme</a>
+        </div><!--End Delete-->
+        
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon icon-reorder"></i> Menu
+                    </a>
+                    <a class="brand" href="#">Ambrosia</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="getting-started.html">Get started</a></li>
+                            <li class="active"><a href="blog.html">Blog</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+						</ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+			<div class="sub-navbar">
+				<div class="container">
+    				<p><i class="icon icon-user"></i> Hello, Guest. <a class="btn btn-login" href="login.html">Login here &raquo;</a></p>
+				</div>
+			</div>
+        </div>
+        
+        <div class="main">
+        	<div class="container">
+                
+                <div class="row">
+                    <div class="span12">
+    				    <h2><span>Our official weblog</span></h2>
+                    </div>
+                </div>
+
+        		<div class="row">
+                    <div class="span9">
+                        <!--first article-->
+                        <article class="row">
+                            <!--author meta-->
+                    		<div class="span2">
+                                <img class="pull-left avatar" src="assets/user-2.png" alt="user"/>
+                                <strong>Written by:</strong>
+                                <p>Lucida Sans</p>
+                                <span class="label label-success"><small>Editor in Chief</small></span>
+                                <hr>
+                                <p>September 12, 2019</p>
+                                <p>Tags:</p>
+                                <ul class="tags">
+                                    <li>Social Media</li>
+                                    <li>Trending Tech</li>
+                                    <li>Branding</li>
+                                    <li>iOS Apps</li>
+                                </ul>
+                    		</div><!-- /span2 author meta -->
+                            
+                            <!--post-->
+                            <div class="span7">
+                                <h3><a href="single-post.html">Win a Free Copy of PhotoSweeper</a></h3>
+                                <a href="single-post.html"><img class="post-image" src="assets/post-image-1.png" alt="blog post"></a>
+                                <p>That’s what’s exciting about PhotoSweeper. It’s a nicely designed app that takes the pain out of sorting and removing your duplicate pictures. It uses 5 methods to find duplicate photos, even ones that have been edited or saved in other apps. Then, you can preview photos together to decide which one to keep. It’ll make organizing your photos easier than ever. Earlier this our team gave PhotoSweeper a 9 out of 10 in our review, and found it to be a great way to reduce the space pictures are taking up on your hard drive. That’s why we’re excited to have 25 copies of it to giveaway to our readers!</p>
+                                <p>The critically-acclaimed iPhone task manager Clear just came to the Mac earlier this month. Even though it received a lot of great support from reviewers across the Internet, users responded harshly to this release. Some claimed that it “doesn’t live up to its hype”, others that it was merely a start, and some went so far as to bash every living feature of its being. For the price, can you get more? Jimmy Do, developer of Mochi, thinks so.</p>
+                                <p>Keyboard shortcuts are used by many, so why not keep the tradition going? (Clear isn’t an outcast because it uses gestures, it’s just a different kind of app.) With Mochi, you can do just that. If you navigate your Mac with many a CMD + Space and open Alfred for all the basic actions, you’ll enjoy creating tasks in this app. All it takes to make a new note (the bubble titles you see to the left) is CMD + N. Type a title and press tab to begin making your list of tasks.</p>
+                                
+                                <hr>
+
+                                <!-- social networks -->
+                                <div>
+                                    <span>Rate this post</span>
+                                    <i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i>
+                                    <span>Like</span> <span>Google+</span>
+                                </div><!-- /social networks -->
+                                
+                                <hr>
+                                
+                                <!-- comments -->
+                                <h3>Latest comments:</h3>
+                                <div>
+                                    <div class="well">
+                                        <img src="assets/user-3.png" alt="" class="pull-left avatar">
+                                        <a href="#">Calisto MT:</a><br>
+                                        I would love to test this app, but for some reason the developer decided to sell it only at USA Mac App Store. I even asked by email if it would be available at MAS around the world but the developer kindly answered: “not planning to sell Mochi outside the United States just yet. We want to focus on one country first before expanding to others”. Crazy selling strategy for a MAS software, but it looks so good that I still want to test it.
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="well">
+                                        <img src="assets/user-2.png" alt="" class="pull-left avatar">
+                                        <a href="#">Calisto MT:</a> <span class="label label-inverse">Author</span><br>
+                                        I actually like the idea. I am doing lots of notes, that I need to remember, or they needs to be done. It is a mix of both things. In this way, things could get managed. I wish this could be web app.
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="well">
+                                        <img src="assets/user-1.png" alt="" class="pull-left avatar">
+                                        <a href="#">Cooper Black:</a><br>
+                                        It's somewhat of a mix between note-taking and task management. The app really isn't sure where it is, and it'd be tough to adopt it until it makes its mind up.
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <!-- comment form -->
+                                <h3>Your turn:</h3>
+                                <div>
+                                    <form name="post-comment">
+                                        <label for="user-name">Name:</label>
+                                        <input type="text" class="span7" name="user-name" placeholder="Name">
+                                            
+                                        <label for="user-email">Email:</label>
+                                        <input type="text" class="span7" name="user-email" placeholder="Email">
+                                        
+                                        <label for="post-comment">Comment:</label>
+                                        <textarea class="span7" name="comment" cols="30" rows="10" placeholder="Your comment" ></textarea>
+                                        
+                                        <input type="submit" class="btn" value="Submit">
+                                    </form>
+                                </div>
+                                
+                            </div><!--end post-->
+                        </article><!--/row-->
+                        <!--end of article-->
+                        
+                        <hr>
+                    </div><!--/span9-->
+                    
+                    <!--sidebar-->
+                    <aside class="span3">
+                        <div class="well">
+                            <h4>Blog Categories:</h4>
+                            <hr>
+                                <ul class="categories">
+                                    <li><a href="#"><i class="icon icon-circle-arrow-right"></i> Networking</a></li>
+                                    <li><a href="#"><i class="icon icon-circle-arrow-right"></i> Web applications</a></li>
+                                    <li><a href="#"><i class="icon icon-circle-arrow-right"></i> iOS development</a></li>
+                                    <li><a href="#"><i class="icon icon-circle-arrow-right"></i> Latest news</a></li>
+                                    <li><a href="#"><i class="icon icon-circle-arrow-right"></i> New releases</a></li>
+                                    <li><a href="#"><i class="icon icon-circle-arrow-right"></i> Most downloaded</a></li>
+                                </ul>
+                            <hr>
+                            <p>Don't miss the chance to visit our headquarter from monday through friday from 9am to 5pm. Best regards from the whole Venture Team.</p>
+                        </div><!--/well-->
+                        
+                        <!--Newsletter-->
+                        <div class="well">
+                            <h4>Newsletter Signup:</h4>
+                            <hr>                          
+                            <form class="centered">
+                                <input class="input-flexible" type="text" placeholder="Type your email">
+                                <br/>
+                                <br/>
+                                <button class="btn" type="submit">Ok, sign me up!</button>
+                            </form>
+                        </div>
+                        
+                        <div class="well adspace">
+                            <h4>Our Sponsors:</h4>
+                            <hr>
+                            <a href="#">
+                                <img class="img-polaroid" src="assets/ad-1.png" alt="ad"/>
+                                <small>Learn Photoshop</small>
+                            </a>
+                            <a href="#">
+                                <img class="img-polaroid" src="assets/ad-2.png" alt="ad"/>
+                                <small>Oleg Dou Photo Edition</small>
+                            </a>
+                            <a href="#">
+                                <img class="img-polaroid" src="assets/ad-3.png" alt="ad"/>
+                                <small>Learn CS6 New Tricks</small>
+                            </a>
+                        </div><!--/adspace well-->
+                    </aside><!--/sidebar-->
+                    
+        		</div><!--/row-->
+        	</div><!--/container-->
+        </div><!--/main-->
+        
+        <footer>
+            <div class="container">
+        		<div class="row">
+                    <div class="span12">
+            			<p>Designed by <a href="https://twitter.com/heyallanmoreno" target="_blank">@heyallanmoreno</a></p>
+                    </div>
+        		</div>
+        	</div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

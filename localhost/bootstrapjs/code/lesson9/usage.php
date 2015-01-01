@@ -1,0 +1,1 @@
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.btn'</span><span class="p">).</span><span class="nx">button</span><span class="p">();</span>

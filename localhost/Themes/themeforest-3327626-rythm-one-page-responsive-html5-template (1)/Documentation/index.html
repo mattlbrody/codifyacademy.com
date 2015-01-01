@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Rythm Template Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description">
+        <meta name="author" content="Autor">
+    
+        <!-- loading the css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        
+		<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+		
+		section {padding: 60px 0 0 0;}
+        </style>
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- Various Icons (Favicon, Touch Icon,... -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+        
+    </head>
+    
+    
+        
+    <body data-spy="scroll" data-target=".navbar" id="top">
+    
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="#overview">Rythm</a><!-- TIP: Change this for the name of your file -->
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#markup">Markup</a></li>
+                            <li><a href="#fonts">Fonts</a></li>
+                            <li><a href="#styles">Styles</a></li>
+                            <li><a href="#javascript">JavaScript</a></li>
+                            <li><a href="#psd">Photoshop</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+    
+    
+    
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+        
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview">
+            
+                <div class="hero-unit">
+                    <h1>Rythm - One Page Responsive HTML5 Template</h1>
+                    <p>Yet Another Template Crafted with &hearts; by <a href="http://themeforest.net/user/PixelForces">PixelForces</a>. Thank you for purchasing our theme!</p>
+                    <div class="row-fluid">
+                        <div class="span8"><a href="mailto:idealizator@gmail.com" class="btn btn-primary btn-large btn-block">Technical Support: <strong>idealizator@gmail.com</strong></a></div>
+                        <div class="span4"><a href="#credits" role="button" class="btn btn-info btn-large btn-block" data-toggle="modal">Credits</a></div>
+                    </div>
+    
+                </div>
+                
+                <hr>
+                
+                <div class="row-fluid">
+                    <div class="span4">
+                        <table width="100%">
+                            <tr>
+                                <td>Designer:</td>
+                                <td><a href="http://themeforest.net/user/JohnPixle">John Fraskos</a></td>
+                            </tr>
+                            <tr>
+                                <td>Coder:</td>
+                                <td><a href="http://themeforest.net/user/Themico">Hleb Poltanovich</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span4">
+                        <table width="100%">
+                            <tr>
+                                <td>Current Item Version:</td>
+                                <td>1.0.0</td>
+                            </tr>
+                            <tr>
+                                <td>Documentation Version</td>
+                                <td>1.0.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span4">
+                        <table width="100%">
+                            <tr>
+                                <td>Created:</td>
+                                <td>2012-10-31</td>
+                            </tr>
+                            <tr>
+                                <td>Modified:</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr>
+                
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+
+          
+            <!-- ========================= SECTION: MARKUP >> START ========================= -->
+            <section id="markup">
+                <div class="page-header">
+                    <h1>Markup <small>Markup customization and highlights</small></h1>
+                </div>
+            
+                <div class="alert alert-info"> <a class="close" data-dismiss="alert">×</a> <strong>Important!</strong> This theme is a responsive HTML5 template built with Twitter Bootstrap. So, you can use framework <a href="http://twitter.github.com/bootstrap/index.html">documentation</a> to biuld custom templates.</div>
+                <p>This theme is a responsive one column layout.</p>
+            
+                <hr />
+            
+                <div class="row">
+                    <div class="span3">
+                        <h3>Main Navigation</h3>
+                        <p>The main navigation work based on anchor links. To link the menu item to the specific block on the page, you need to add "#" + "id attribute" of that block to the link "href" attribute.</p>
+                    </div>
+            
+                    <div class="span9"> 
+
+<!-- Code Block >> Start -->                   
+<pre class="prettyprint linenums">
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;li class="current-menu-item"&gt;&lt;a href="#top"&gt;Top&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#the-team"&gt;The Team&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#connect"&gt;Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#clients"&gt;Clients&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#get-in-touch"&gt;Get In Touch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&hellip;
+&lt;article class="page portfolio" id="portfolio"&gt;
+&hellip;
+&lt;article class="page even" id="services"&gt;
+&hellip;
+</pre>
+<!-- Code Block >> End -->                   
+
+                    </div>
+                </div>
+            
+                <hr />
+            
+                <div class="row">
+                    <div class="span12">
+                        <h3>Change Structure</h3>
+                        <p>Changing structure is easy with Bootstrap. Only you need is manipulate with CSS classes of the elements in a row: <em>.span1 - .span12</em>. Learn more about <a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">grid system</a>.</p>
+                    </div>
+                
+                </div>
+            </section>
+            <!-- ========================= SECTION: MARKUP >> END ========================= -->
+            
+            
+            
+<!-- ========================= SECTION: MARKUP >> START ========================= -->
+            <section id="fonts">
+                <div class="page-header">
+                    <h1>Fonts <small>Setting up custom font</small></h1>
+                </div>
+                        
+                <div class="row">
+                    <div class="span12">
+                        <p>This theme use 1 custom free font called "Novecento wide Bold". You can download it here (require registration): <a href="http://www.fontspring.com/fonts/synthview/novecento-wide">http://www.fontspring.com/fonts/synthview/novecento-wide</a>.</p>
+                        <p>After downloading the font file, you need to generate font face kit of this font. You can do it here: <a href="http://fontface.codeandmore.com/">http://fontface.codeandmore.com/</a> or on other such sites. After generating font face kit, you need to get 4 files of the font, and put them in the "fonts" folder of the template. These files must be named like (rename files with respecive extension if required):</p>
+                        <ul>
+                        	<li>novecentowide-bold.eot</li>
+                        	<li>novecentowide-bold.svg</li>
+                        	<li>novecentowide-bold.ttf</li>
+                        	<li>novecentowide-bold.woff</li>
+                        </ul>
+                        <p>After you put the files into fonts folder, they will start working.</p>
+                    </div>
+                </div>
+            
+            </section>
+            <!-- ========================= SECTION: MARKUP >> END ========================= -->
+            
+            
+
+
+            <!-- ========================= SECTION: STYLES >> START ========================= -->
+            <section id="styles">
+                <div class="page-header">
+                    <h1>Styles <small>Styles customization and highlights</small></h1>
+                </div>
+            
+                <div class="row">
+                    <div class="span3">
+                        <h3>Stylesheets</h3>
+                        <p>Here's a list of the stylesheet files I'm using with this template, you can find more information opening each file:</p>
+                    </div>
+                    <div class="span9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>bootstrap.min.css</code></td>
+                                    <td>Twitter Bootostrap framework file.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>flexslider.css</code></td>
+                                    <td>Flexslider jQuery plugin file.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>style.css</code></td>
+                                    <td>General file with all template styles.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr />
+                
+                <div class="row">
+                    <div class="span12">
+                        <h3>CSS Structure</h3>
+                        <p>The main style.css file separated in the sections by conmments. You can easily navigate through it to find rules you wish to edit.</p>
+                    </div>                
+            </section>
+            <!-- ========================= SECTION: STYLES >> END ========================= -->
+            
+            
+            
+            <!-- ========================= SECTION: JAVASCRIPT >> START ========================= -->
+            <section id="javascript">
+            
+                <div class="page-header">
+                    <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+                </div>
+                
+                <div class="row">
+                    <div class="span3">
+                        <h3>JavaScript Files</h3>
+                        <p>I use 9 JS files in the template.</p>
+                    </div>
+                    <div class="span9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>File Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>jquery-1.7.2.min.js</code></td>
+                                    <td>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>modernizr.custom.js</code></td>
+                                    <td>Is a JavaScript library that detects HTML5 and CSS3 features in the user's browser. </td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.mobilemenu.js</code></td>
+                                    <td>Switch default menu into select on the small resolution screens.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.flexslider-min.js</code></td>
+                                    <td>Fully responsive jQuery slider plugin.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.simplemodal.1.4.3.min.js</code></td>
+                                    <td>Modal windows jQuery plugin.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.tweet.js</code></td>
+                                    <td>Put twitter on your website with tweet, an unobtrusive javascript plugin for jquery.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.scrollTo-1.4.3.1-min.js</code></td>
+                                    <td>Easily scroll overflowed elements, and the screen itself.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>jquery.localscroll-1.2.7-min.js</code></td>
+                                    <td>This plugin will animate a regular anchor navigation.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>main.js</code></td>
+                                    <td>The main JS file with all plugins initialization and settings.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr />
+                
+                <div class="row">
+                    <div class="span3">
+                        <h3>Customize main.js</h3>
+                        <p>If you want to change the slider's speed transition, open up the file <code> scripts.js </code> and change the following code: </p>
+                    </div>
+                                        <div class="span9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>Twitter</code></td>
+                                    <td>Set your Twitter account username on line 29.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>Google Map</code></td>
+                                    <td>Set your location cooradinates on line 123, and your popup description on line 140, title - line 156.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- ========================= SECTION: JAVASCRIPT >> END ========================= -->
+
+
+
+            <!-- ========================= SECTION: PSD >> START ========================= -->
+            <section id="psd">
+                <div class="page-header">
+                    <h1>Photoshop Files</h1>
+                </div>
+                <p>I've included two psds with this theme.</p>
+            </section>
+            <!-- ========================= SECTION: PSD >> START ========================= -->
+            
+            
+            <hr />
+    
+            <div class="goodbye">
+                <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+            </div>
+        
+            <hr />
+        
+            <footer>
+                <p>&copy; PixelForces 2012</p>
+            </footer>
+            
+        </div>
+        <!-- ========================= MAIN CONTAINER >> END ========================= -->
+    
+        
+        
+        <!-- CREDITS >> START -->
+        <div class="modal hide fade" id="credits" tabindex="-1" role="dialog" aria-labelledby="credits-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="credits-label">Credits</h3>
+            </div>
+            <div class="modal-body">
+                <p>I've used the following images, icons or other files as listed.</p>
+                <h3>JavaScript</h3>
+                <ol>
+                    <li><a href="http://jquery.com/">jQuery</a></small></li>
+                    <li><a href="http://modernizr.com/">Modernizr</a></small></li>
+                    <li><a href="https://github.com/mambows/mobilemenu">MobileMenu</a></small></li>
+                    <li><a href="http://woothemes.com/flexslider">FlexSlider</a></small></li>
+                    <li><a href="http://www.ericmmartin.com/projects/simplemodal/">SimpleModal</a></small></li>
+                    <li><a href="https://github.com/seaofclouds/tweet">Twitter Widget</a></small></li>
+                    <li><a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">ScrollTo</a></small></li>
+                    <li><a href="http://flesler.blogspot.com/2007/10/jquerylocalscroll-10.html">LocalScroll</a></small></li>
+                </ol>
+                <h3>CSS</h3>
+                <ol>
+                    <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
+                </ol>
+                <h3>Images</h3>
+                <ol>
+                    <li><a href="http://www.premiumpixels.com/freebies/google-maps-ui-controls-psd/">Google Maps UI Control</a></li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CREDITS >> END -->
+
+        <!-- loading javascripts -->
+		<script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        
+        <!-- init javascripts -->
+        <script src="assets/js/init.js"></script>
+         
+    </body>
+    
+</html>
